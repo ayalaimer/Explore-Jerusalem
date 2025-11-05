@@ -1,0 +1,22 @@
+/* Mobile-first responsive rules (<= 768px) + hamburger menu */
+
+/* Hamburger toggle (checkbox hack) */
+#nav-toggle { display: none; }
+.hamburger { display: none; cursor: pointer; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,253,245,0.25); }
+.hamburger span { display: block; width: 22px; height: 2px; background: #FFFDF5; margin: 5px 0; transition: transform .2s ease, opacity .2s ease; }
+
+@media (max-width: 768px) {
+	.nav { display: none; width: 100%; flex-direction: column; gap: 6px; padding-top: 10px; }
+	.header-inner { flex-wrap: wrap; }
+	.hamburger { display: inline-block; }
+	#nav-toggle:checked ~ .nav { display: flex; }
+}
+
+/* Layout simplification */
+@media (max-width: 768px) {
+	.grid { grid-template-columns: 1fr !important; }
+	.layout { grid-template-columns: 1fr !important; }
+	.card img { height: 200px; }
+}
+
+

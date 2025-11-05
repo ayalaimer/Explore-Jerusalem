@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explore Jerusalem – חיי לילה</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="icon" href="../media/logo.svg">
+</head>
+<body>
+	<a class="skip-link" href="#main">דלג לתוכן</a>
+	<header class="header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html" aria-label="בית">
+				<img src="../media/logo.svg" alt="Explore Jerusalem">
+				<span>Explore Jerusalem</span>
+			</a>
+			<input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
+			<label class="hamburger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+			<nav class="nav" aria-label="ניווט ראשי">
+				<a href="index.html">בית</a>
+				<a href="experiences.html">חוויות</a>
+				<a href="food.html">אוכל</a>
+				<a class="active" href="nightlife.html">חיי לילה</a>
+				<a href="events.html">אירועים</a>
+				<a href="about.html">אודות</a>
+				<a href="contact.html">צור קשר</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="section">
+		<div class="container layout">
+			<article>
+				<h1 class="m-0">חיי לילה בירושלים</h1>
+				<p class="muted">ברים, הופעות חיות ומועדוני תרבות.</p>
+				<div class="grid mt-4">
+					<div class="card">
+						<img src="../media/jeru-3.svg" alt="במה עם תאורה">
+						<div class="card-body">
+							<h3>הופעות</h3>
+							<p>ליינאפים מגוונים של מוזיקה ישראלית ובינלאומית.</p>
+							<p class="mt-3"><a href="#">לפרטים נוספים →</a></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="../media/jeru-4.svg" alt="בר קוקטיילים">
+						<div class="card-body">
+							<h3>ברים</h3>
+							<p>אווירה ירושלמית בשוק, במדרחוב ובשכונות היצירתיות.</p>
+							<p class="mt-3"><a href="#">לפרטים נוספים →</a></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="../media/jeru-5.svg" alt="מועדון אמנות">
+						<div class="card-body">
+							<h3>אמנות ותרבות</h3>
+							<p>מועדוני תרבות, תערוכות לילה וסדנאות מיוחדות.</p>
+							<p class="mt-3"><a href="#">לפרטים נוספים →</a></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="../media/jeru-6.svg" alt="מסיבות ודיג׳ייז">
+						<div class="card-body">
+							<h3>מסיבות ודיג׳ייז</h3>
+							<p>לילות אלקטרוניים וחוויות אנרגטיות ברחבי העיר.</p>
+							<p class="mt-3"><a href="#">לפרטים נוספים →</a></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="../media/jeru-2.svg" alt="סיורי לילה">
+						<div class="card-body">
+							<h3>סיורי לילה</h3>
+							<p>העיר העתיקה אחרי החשיכה – קסם אחר.</p>
+							<p class="mt-3"><a href="#">לפרטים נוספים →</a></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="../media/jeru-1.svg" alt="מופעי רחוב">
+						<div class="card-body">
+							<h3>מופעי רחוב</h3>
+							<p>אומנים יוצרים, נגנים ושחקנים ברחובות מרכז העיר.</p>
+							<p class="mt-3"><a href="#">לפרטים נוספים →</a></p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<aside class="aside">
+				<h2 class="m-0">לוח הופעות</h2>
+				<p class="mt-3">בדקו את לוח האירועים המקומי כדי לא לפספס.</p>
+				<p class="mt-3"><a href="events.html#music">אירועי מוזיקה קרובים</a></p>
+			</aside>
+		</div>
+	</main>
+
+	<section class="section" aria-labelledby="contact-title">
+		<div class="container" style="background:#1E3A5F;border:1px solid rgba(255,253,245,0.12);border-radius:14px;padding:24px;">
+			<h2 id="contact-title" class="m-0">Contact Us</h2>
+			<form class="mt-3" action="#" method="post" style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;color:#FFFDF5;">
+				<div style="flex:1 1 260px;min-width:240px;">
+					<label class="label" for="night-name">שם</label>
+					<input class="input" id="night-name" name="name" type="text" required placeholder="הכניסו שם">
+				</div>
+				<div style="flex:1 1 260px;min-width:240px;">
+					<label class="label" for="night-email">דוא"ל</label>
+					<input class="input" id="night-email" name="email" type="email" required placeholder="name@example.com">
+				</div>
+				<div style="flex:1 1 100%;min-width:240px;">
+					<label class="label" for="night-message">הודעה</label>
+					<textarea class="textarea" id="night-message" name="message" minlength="5" required placeholder="מה תרצו לשאול?"></textarea>
+				</div>
+				<button class="btn" type="submit" style="background:#D4AF37;color:#111;">שליחה</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<small>© Explore Jerusalem</small>
+			<nav class="nav" aria-label="ניווט תחתון">
+				<a href="about.html">אודות</a>
+				<a href="contact.html">צור קשר</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
+
+

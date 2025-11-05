@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explore Jerusalem – צור קשר</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="icon" href="../media/logo.svg">
+</head>
+<body>
+	<a class="skip-link" href="#main">דלג לתוכן</a>
+	<header class="header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html" aria-label="בית">
+				<img src="../media/logo.svg" alt="Explore Jerusalem">
+				<span>Explore Jerusalem</span>
+			</a>
+			<input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
+			<label class="hamburger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+			<nav class="nav" aria-label="ניווט ראשי">
+				<a href="index.html">בית</a>
+				<a href="experiences.html">חוויות</a>
+				<a href="food.html">אוכל</a>
+				<a href="nightlife.html">חיי לילה</a>
+				<a href="events.html">אירועים</a>
+				<a href="about.html">אודות</a>
+				<a class="active" href="contact.html">צור קשר</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="section">
+		<div class="container layout">
+			<article>
+				<h1 class="m-0">צרו קשר</h1>
+				<p class="muted">נשמח לשמוע מכם – שאלות, המלצות ומשוב.</p>
+				<form class="mt-4" action="#" method="post" novalidate>
+					<label class="label" for="name">שם מלא</label>
+					<input class="input" id="name" name="name" type="text" required placeholder="שם ושם משפחה">
+
+					<label class="label" for="email">דוא"ל</label>
+					<input class="input" id="email" name="email" type="email" required placeholder="name@example.com">
+					<p class="helper">לעולם לא נחלוק את הדוא"ל שלכם.</p>
+
+					<label class="label" for="topic">נושא</label>
+					<select class="select" id="topic" name="topic" required>
+						<option value="">בחרו נושא…</option>
+						<option value="tour">שאלה לגבי חוויה/סיור</option>
+						<option value="food">המלצה קולינרית</option>
+						<option value="event">אירועים</option>
+						<option value="other">אחר</option>
+					</select>
+
+					<label class="label" for="message">הודעה</label>
+					<textarea class="textarea" id="message" name="message" minlength="10" maxlength="500" required placeholder="ספרו לנו איך נוכל לעזור…"></textarea>
+
+					<button class="btn mt-3" type="submit">שליחה</button>
+				</form>
+			</article>
+			<aside class="aside">
+				<h2 class="m-0">יצירת קשר מהיר</h2>
+				<p class="mt-3">לשאלות דחופות ניתן לפנות גם דרך <a href="https://www.itraveljerusalem.com/" target="_blank" rel="noopener noreferrer">האתר הרשמי</a>.</p>
+				<p class="mt-3"><a href="https://www.google.com/maps/place/Jerusalem" target="_blank" rel="noopener noreferrer">מצאו אותנו במפות</a></p>
+			</aside>
+		</div>
+	</main>
+
+	<section class="section" aria-labelledby="contact-title">
+		<div class="container" style="background:#1E3A5F;border:1px solid rgba(255,253,245,0.12);border-radius:14px;padding:24px;">
+			<h2 id="contact-title" class="m-0">Contact Us</h2>
+			<form class="mt-3" action="#" method="post" style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;color:#FFFDF5;">
+				<div style="flex:1 1 260px;min-width:240px;">
+					<label class="label" for="contact-name2">שם</label>
+					<input class="input" id="contact-name2" name="name" type="text" required placeholder="הכניסו שם">
+				</div>
+				<div style="flex:1 1 260px;min-width:240px;">
+					<label class="label" for="contact-email2">דוא"ל</label>
+					<input class="input" id="contact-email2" name="email" type="email" required placeholder="name@example.com">
+				</div>
+				<div style="flex:1 1 100%;min-width:240px;">
+					<label class="label" for="contact-message2">הודעה</label>
+					<textarea class="textarea" id="contact-message2" name="message" minlength="5" required placeholder="מה תרצו לשאול?"></textarea>
+				</div>
+				<button class="btn" type="submit" style="background:#D4AF37;color:#111;">שליחה</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<small>© Explore Jerusalem</small>
+			<nav class="nav" aria-label="ניווט תחתון">
+				<a href="about.html">אודות</a>
+				<a href="contact.html">צור קשר</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
+
+
