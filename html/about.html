@@ -1,91 +1,66 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Explore Jerusalem – אודות</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/responsive.css">
-	<link rel="icon" href="../media/logo.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Jerusalem – אודות</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../media/logo.png">
 </head>
 <body>
-	<a class="skip-link" href="#main">דלג לתוכן</a>
-	<header class="header">
-		<div class="container header-inner">
-			<a class="brand" href="index.html" aria-label="בית">
-				<img src="../media/logo.svg" alt="Explore Jerusalem">
-				<span>Explore Jerusalem</span>
-			</a>
-			<input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
-			<label class="hamburger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
-			<nav class="nav" aria-label="ניווט ראשי">
-				<a href="index.html">בית</a>
-				<a href="experiences.html">חוויות</a>
-				<a href="food.html">אוכל</a>
-				<a href="nightlife.html">חיי לילה</a>
-				<a href="events.html">אירועים</a>
-				<a class="active" href="about.html">אודות</a>
-				<a href="contact.html">צור קשר</a>
-			</nav>
-		</div>
-	</header>
+  <a class="skip-link" href="#main">דלג לתוכן</a>
 
-	<main id="main" class="section">
-		<div class="container layout">
-			<article>
-				<h1 class="m-0">מי אנחנו</h1>
-				<p class="muted">Explore Jerusalem הוא פרויקט קורס המציג את ירושלים בעיניים חווייתיות.</p>
-				<p class="mt-3">האתר נבנה בקוד ניקי, סמנטי ורספונסיבי, עם דגש על טיפוגרפיה, צבעוניות ואסתטיקה.
-				</p>
-				<h2 class="mt-6 m-0">ערכי המותג</h2>
-				<ul class="mt-3">
-					<li>אותנטיות – לספר את הסיפור האמיתי של העיר.</li>
-					<li>נגישות – עיצוב קריא, RTL מלא והתאמה לכל המסכים.</li>
-					<li>השראה – לעורר יציאה לחוויה מחוץ למסך.</li>
-				</ul>
-			</article>
-			<aside class="aside">
-				<h2 class="m-0">צרו קשר</h2>
-				<p class="mt-3">נשמח לשמוע מכם בעמוד <a href="contact.html">צור קשר</a>.</p>
-				<p class="mt-3"><a href="https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener noreferrer">לקריאה נוספת על ירושלים בויקיפדיה</a></p>
-			</aside>
-		</div>
-	</main>
+  <!-- ה־Header ייטען אוטומטית -->
+  <div id="header-placeholder"></div>
 
-	<section class="section" aria-labelledby="contact-title">
-		<div class="container" style="background:#1E3A5F;border:1px solid rgba(255,253,245,0.12);border-radius:14px;padding:24px;">
-			<h2 id="contact-title" class="m-0">Contact Us</h2>
-			<form class="mt-3" action="#" method="post" style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;color:#FFFDF5;">
-				<div style="flex:1 1 260px;min-width:240px;">
-					<label class="label" for="about-name">שם</label>
-					<input class="input" id="about-name" name="name" type="text" required placeholder="הכניסו שם">
-				</div>
-				<div style="flex:1 1 260px;min-width:240px;">
-					<label class="label" for="about-email">דוא"ל</label>
-					<input class="input" id="about-email" name="email" type="email" required placeholder="name@example.com">
-				</div>
-				<div style="flex:1 1 100%;min-width:240px;">
-					<label class="label" for="about-message">הודעה</label>
-					<textarea class="textarea" id="about-message" name="message" minlength="5" required placeholder="מה תרצו לשאול?"></textarea>
-				</div>
-				<button class="btn" type="submit" style="background:#D4AF37;color:#111;">שליחה</button>
-			</form>
-		</div>
-	</section>
+  <main id="main" class="section">
+    <div class="container layout">
+      <article>
+        <h1 class="m-0">מי אנחנו</h1>
+        <p class="muted">Explore Jerusalem הוא פרויקט קורס המציג את ירושלים בעיניים חווייתיות.</p>
 
-	<footer class="footer">
-		<div class="container footer-inner">
-			<small>© Explore Jerusalem</small>
-			<nav class="nav" aria-label="ניווט תחתון">
-				<a href="about.html">אודות</a>
-				<a href="contact.html">צור קשר</a>
-			</nav>
-		</div>
-	</footer>
+        <p class="mt-3">
+          האתר נבנה בקוד נקי, סמנטי ורספונסיבי, עם דגש על טיפוגרפיה, צבעוניות ואסתטיקה.  
+          מטרת האתר היא להעניק חוויית גלישה נעימה, ברורה ומזמינה לכל משתמש.
+        </p>
+
+        <h2 class="mt-6 m-0">ערכי המותג</h2>
+        <ul class="mt-3">
+          <li><strong>אותנטיות</strong> – לספר את הסיפור האמיתי של העיר.</li>
+          <li><strong>נגישות</strong> – עיצוב קריא, RTL מלא והתאמה לכל המסכים.</li>
+          <li><strong>השראה</strong> – לעורר יציאה לחוויה מחוץ למסך.</li>
+        </ul>
+      </article>
+
+      <aside class="aside">
+        <h2 class="m-0">צרו קשר</h2>
+        <p class="mt-3">נשמח לשמוע מכם בעמוד <a href="contact.html">צור קשר</a>.</p>
+        <p class="mt-3">
+          <a href="https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+             target="_blank" rel="noopener noreferrer">
+             לקריאה נוספת על ירושלים בויקיפדיה
+          </a>
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ה־Footer ייטען אוטומטית -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // טעינת Header ו-Footer
+    fetch("../components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+    fetch("../components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+  </script>
 </body>
 </html>
-
-

@@ -1,141 +1,91 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Explore Jerusalem – בית</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/responsive.css">
-	<link rel="icon" href="../media/logo.svg">
+<head>
+  <meta charset="utf-8">
+  <title>Explore Jerusalem – בית</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" href="../media/logo.png">
 </head>
 <body>
-	<a class="skip-link" href="#main">דלג לתוכן</a>
-	<header class="header" role="banner">
-		<div class="container header-inner">
-			<a class="brand" href="index.html" aria-label="בית">
-				<img src="../media/logo.svg" alt="Explore Jerusalem">
-				<span>Explore Jerusalem</span>
-			</a>
-			<input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
-			<label class="hamburger" for="nav-toggle" aria-hidden="true">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
-			<nav class="nav" aria-label="ניווט ראשי">
-				<a class="active" href="index.html">בית</a>
-				<a href="experiences.html">חוויות</a>
-				<a href="food.html">אוכל</a>
-				<a href="nightlife.html">חיי לילה</a>
-				<a href="events.html">אירועים</a>
-				<a href="about.html">אודות</a>
-				<a href="contact.html">צור קשר</a>
-			</nav>
-		</div>
-	</header>
+  <a class="skip-link" href="#main">דלג לתוכן</a>
 
-	<main id="main">
-		<section class="hero">
-			<div class="container hero-content">
-				<h1>מגלים את ירושלים</h1>
-				<p>עיר של היסטוריה, תרבות, אוכל וחוויות – בואו להכיר את ירושלים דרך העיניים שלנו.</p>
-				<p>
-					<a class="btn" href="experiences.html">התחילו מהחוויות</a>
-					<a class="btn alt" href="https://www.itraveljerusalem.com/" target="_blank" rel="noopener noreferrer">האתר הרשמי לתיירות בירושלים</a>
-				</p>
-			</div>
-		</section>
+  <!-- כאן נטען ה-header -->
+  <div id="header-placeholder"></div>
 
-		<section class="section" aria-labelledby="contact-title">
-			<div class="container" style="background:#1E3A5F;border:1px solid rgba(255,253,245,0.12);border-radius:14px;padding:24px;">
-				<h2 id="contact-title" class="m-0">Contact Us</h2>
-				<form class="mt-3" action="#" method="post" style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;color:#FFFDF5;">
-					<div style="flex:1 1 260px;min-width:240px;">
-						<label class="label" for="home-name">שם</label>
-						<input class="input" id="home-name" name="name" type="text" required placeholder="הכניסו שם">
-					</div>
-					<div style="flex:1 1 260px;min-width:240px;">
-						<label class="label" for="home-email">דוא"ל</label>
-						<input class="input" id="home-email" name="email" type="email" required placeholder="name@example.com">
-					</div>
-					<div style="flex:1 1 100%;min-width:240px;">
-						<label class="label" for="home-message">הודעה</label>
-						<textarea class="textarea" id="home-message" name="message" minlength="5" required placeholder="מה תרצו לשאול?"></textarea>
-					</div>
-					<button class="btn" type="submit" style="background:#D4AF37;color:#111;">שליחה</button>
-				</form>
-			</div>
-		</section>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>מגלים את ירושלים</h1>
+        <p>עיר של היסטוריה, תרבות, אוכל וחוויות – בואו להכיר את ירושלים דרך העיניים שלנו.</p>
+        <p>
+          <a class="btn" href="experiences.html">התחילו מהחוויות</a>
+          <a class="btn alt" href="https://www.itraveljerusalem.com/" target="_blank">האתר הרשמי לתיירות בירושלים</a>
+        </p>
+      </div>
+    </section>
 
-		<section class="section">
-			<div class="container">
-				<h2 class="m-0">מה מחכה לכם כאן</h2>
-				<p class="muted mt-3">טעימה קטנה מהתוכן שבפנים – קפיצה מהירה לעולמות שמרכיבים את ירושלים.</p>
-				<div class="grid mt-4">
-					<article class="card">
-						<img src="../media/hero-jerusalem.svg" alt="חומות העיר העתיקה">
-						<div class="card-body">
-							<h3>חוויות</h3>
-							<p>מסלולי טיול, נקודות תצפית, שווקים וסיורים מומלצים לכל המשפחה.</p>
-							<p class="mt-3"><a href="experiences.html">למעבר לעמוד חוויות →</a></p>
-						</div>
-					</article>
-					<article class="card">
-						<img src="../media/hero-jerusalem.svg" alt="דוכני אוכל בשוק מחנה יהודה">
-						<div class="card-body">
-							<h3>אוכל</h3>
-							<p>מהמאפיות הותיקות ועד המסעדות החדשות – הטעמים שמספרים סיפור.</p>
-							<p class="mt-3"><a href="food.html">למעבר לעמוד אוכל →</a></p>
-						</div>
-					</article>
-					<article class="card">
-						<img src="../media/hero-jerusalem.svg" alt="אורות לילה במרכז העיר">
-						<div class="card-body">
-							<h3>חיי לילה</h3>
-							<p>ברים, הופעות ואירועי תרבות בשעות הקטנות – ירושלים בקצב אחר.</p>
-							<p class="mt-3"><a href="nightlife.html">למעבר לעמוד חיי לילה →</a></p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+    <section class="section">
+      <div class="container">
+        <h2 class="m-0">מה מחכה לכם כאן</h2>
+        <p class="muted mt-3">טעימה קטנה מהתוכן שבפנים – קפיצה מהירה לעולמות שמרכיבים את ירושלים.</p>
+        <div class="grid mt-4">
+          <article class="card">
+            <img src="../media/davidsCity.jpeg" alt="חומות העיר העתיקה">
+            <div class="card-body">
+              <h3>חוויות</h3>
+              <p>מסלולי טיול, נקודות תצפית, שווקים וסיורים מומלצים לכל המשפחה.</p>
+              <p class="mt-3"><a href="experiences.html">למעבר לעמוד חוויות →</a></p>
+            </div>
+          </article>
 
-		<section class="section">
-			<div class="container layout">
-				<article>
-					<h2 class="m-0">אירועים ובמה קרובה</h2>
-					<p class="muted">דגשים קצרים על פסטיבלים, תערוכות ומופעים שנמצאים תמיד בתנועה בירושלים.</p>
-					<ul class="inline mt-3">
-						<li><a href="events.html">פסטיבלים</a></li>
-						<li><a href="events.html#culture">תרבות</a></li>
-						<li><a href="events.html#music">מוזיקה</a></li>
-					</ul>
-				</article>
-				<aside class="aside" aria-label="קישורים שימושיים">
-					<h3 class="m-0">קישורים שימושיים</h3>
-					<ul class="mt-3">
-						<li><a href="https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener noreferrer">ויקיפדיה – ירושלים</a></li>
-						<li><a href="https://www.google.com/maps/place/Jerusalem" target="_blank" rel="noopener noreferrer">Google Maps – ירושלים</a></li>
-						<li><a href="https://www.itraveljerusalem.com/" target="_blank" rel="noopener noreferrer">iTravelJerusalem</a></li>
-					</ul>
-				</aside>
-			</div>
-		</section>
-	</main>
+          <article class="card">
+            <img src="../media/food.jpeg" alt="דוכני אוכל בשוק מחנה יהודה">
+            <div class="card-body">
+              <h3>אוכל</h3>
+              <p>מהמאפיות הותיקות ועד המסעדות החדשות – הטעמים שמספרים סיפור.</p>
+              <p class="mt-3"><a href="food.html">למעבר לעמוד אוכל →</a></p>
+            </div>
+          </article>
 
-	<footer class="footer" role="contentinfo">
-		<div class="container footer-inner">
-			<small>© כל הזכויות שמורות – Explore Jerusalem</small>
-			<nav class="nav" aria-label="ניווט תחתון">
-				<a href="about.html">אודות</a>
-				<a href="contact.html">צור קשר</a>
-			</nav>
-		</div>
-	</footer>
+          <article class="card">
+            <img src="../media/nightLife.jpg" alt="אורות לילה במרכז העיר">
+            <div class="card-body">
+              <h3>חיי לילה</h3>
+              <p>ברים, הופעות ואירועי תרבות בשעות הקטנות – ירושלים בקצב אחר.</p>
+              <p class="mt-3"><a href="nightlife.html">למעבר לעמוד חיי לילה →</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="../media/events.jpg" alt="אירועים בירושלים">
+            <div class="card-body">
+              <h3>אירועים בירושלים</h3>
+              <p>הופעות חיות, פסטיבלים, תערוכות, אירועי תרבות וסדנאות – בואו לגלות מה קורה בעיר שלא נרדמת.</p>
+              <p class="mt-3"><a href="events.html">למעבר לעמוד אירועים →</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- כאן נטען ה-footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // טעינת header
+    fetch("../components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+    // טעינת footer
+    fetch("../components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+  </script>
 </body>
 </html>
-
-
