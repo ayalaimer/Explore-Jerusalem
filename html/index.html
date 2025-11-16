@@ -1,34 +1,57 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <title>Explore Jerusalem – בית</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="icon" href="../media/logo.png">
-</head>
-<body>
-  <a class="skip-link" href="#main">דלג לתוכן</a>
+  <head>
+    <meta charset="utf-8">
+    <title>Explore Jerusalem – בית</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../media/logo.png">
+  </head>
+  <body> 
+    <header class="header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="בית">
+          <img src="../media/logo.png" alt="Explore Jerusalem">
+          <span>Explore Jerusalem</span>
+        </a>
 
-  <!-- כאן נטען ה-header -->
-  <div id="header-placeholder"></div>
+        <input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
+        <label class="hamburger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-content">
-        <h1>מגלים את ירושלים</h1>
-        <p>עיר של היסטוריה, תרבות, אוכל וחוויות – בואו להכיר את ירושלים דרך העיניים שלנו.</p>
-        <p>
-          <a class="btn" href="experiences.html">התחילו מהחוויות</a>
-          <a class="btn alt" href="https://www.itraveljerusalem.com/" target="_blank">האתר הרשמי לתיירות בירושלים</a>
-        </p>
+        <nav class="nav" aria-label="ניווט ראשי">
+          <a href="index.html">בית</a>
+          <a href="experiences.html">חוויות</a>
+          <a href="food.html">אוכל</a>
+          <a href="nightlife.html">חיי לילה</a>
+          <a href="events.html">אירועים</a>
+          <a href="museum.html">מוזיאונים</a>
+          <a href="park.html">פארקים</a>
+          <a href="about.html">אודות</a>
+          <a href="contact.html">צור קשר</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="section">
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>מגלים את ירושלים</h1>
+          <p>עיר של היסטוריה, תרבות, אוכל וחוויות – בואו להכיר את ירושלים דרך העיניים שלנו.</p>
+          <p>
+            <a class="btn" href="experiences.html">התחילו מהחוויות</a>
+            <a class="btn alt" href="https://www.itraveljerusalem.com/" target="_blank">האתר הרשמי לתיירות בירושלים</a>
+          </p>
+        </div>
+      </section>
+
+      
       <div class="container">
         <h2 class="m-0">מה מחכה לכם כאן</h2>
         <p class="muted mt-3">טעימה קטנה מהתוכן שבפנים – קפיצה מהירה לעולמות שמרכיבים את ירושלים.</p>
@@ -68,24 +91,56 @@
               <p class="mt-3"><a href="events.html">למעבר לעמוד אירועים →</a></p>
             </div>
           </article>
+
+          <article class="card">
+            <img src="../media/museum.png" alt="מוזיאונים בירושלים">
+            <div class="card-body">
+              <h3>מוזיאונים</h3>
+              <p>מוזיאונים לאומיים, אמנות, היסטוריה וארכיאולוגיה.</p>
+              <p class="mt-3"><a href="museum.html">למעבר לעמוד מוזיאונים →</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="../media/parks.png" alt="פארקים וטבע בירושלים">
+            <div class="card-body">
+              <h3>פארקים</h3>
+              <p>ריאות ירוקות בלב העיר: גנים, מסלולים ושמורות טבע.</p>
+              <p class="mt-3"><a href="park.html">למעבר לעמוד פארקים →</a></p>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
-  </main>
+     
+      <div class="flex-container container">
+        <div class="flex-item">
+          <h3>נופי ירושלים:</h3>
+          <video src="C:\Users\1\project\fullStack\Explore-Jerusalem\media\views-of-jer.mp4"
+          controls autoplay muted loop></video>
+        </div>
+          <div class="flex-item">
+            <h3>ירושלים על המפה:</h3>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108878.7831002778!2d35.15174773824191!3d31.79155259416562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d8383a15ed%3A0x46b412b189a08e3!2z15HXmdeR16kg16nXlSDXpdeo15nXqSDXlSDXnteZ15XXqA!5e0!3m2!1siw!2sil!4v1700139260799!5m2!1siw!2sil"  
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+      </div>
+      
+    </main>
 
-  <!-- כאן נטען ה-footer -->
-  <div id="footer-placeholder"></div>
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <small>© 2025 Explore Jerusalem – כל הזכויות שמורות</small>
+        <nav class="nav" aria-label="ניווט תחתון">
+        <a href="about.html">אודות</a>
+        <a href="contact.html">צור קשר</a>
+        </nav>
+      </div>
+    </footer>
 
-  <script>
-    // טעינת header
-    fetch("../components/header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header-placeholder").innerHTML = data);
 
-    // טעינת footer
-    fetch("../components/footer.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
-  </script>
-</body>
+  </body>
 </html>

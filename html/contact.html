@@ -1,1 +1,100 @@
- 
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explore Jerusalem – צור קשר</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="icon" href="../media/logo.png">
+</head>
+<body>
+    <header class="header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="בית">
+          <img src="../media/logo.png" alt="Explore Jerusalem">
+          <span>Explore Jerusalem</span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
+        <label class="hamburger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="nav" aria-label="ניווט ראשי">
+          <a href="index.html">בית</a>
+          <a href="experiences.html">חוויות</a>
+          <a href="food.html">אוכל</a>
+          <a href="nightlife.html">חיי לילה</a>
+          <a href="events.html">אירועים</a>
+          <a href="museum.html">מוזיאונים</a>
+          <a href="park.html">פארקים</a>
+          <a href="about.html">אודות</a>
+          <a href="contact.html">צור קשר</a>
+        </nav>
+      </div>
+    </header>
+	<main id="main" class="section">
+		<div class="container">
+            <article class="article">
+			<h1 class="m-0">צרו איתנו קשר</h1>
+			<p class="muted">נשמח לענות על כל שאלה, בקשה או הצעת שיתוף פעולה.</p>
+
+			<p class="mt-4">
+				אנו מזמינים אותך ליצור קשר ישיר עם צוות הארגון שלנו. בין אם יש לך שאלה לגבי מסלול טיול ספציפי, הצעת שיתוף פעולה, או פשוט רצון לחלוק חוויה ירושלמית מרגשת – אנחנו כאן כדי לשמוע ממך ולסייע.
+			</p>
+
+			<form action="#" method="POST" class="contact-form mt-5">
+				<div class="form-group">
+					<label for="full-name">שם מלא:</label>
+					<input type="text" id="full-name" name="full_name" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="email">דוא"ל:</label>
+					<input type="email" id="email" name="email_address" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="subject">נושא הפנייה:</label>
+					<select id="subject" name="subject" required>
+						<option value="" disabled selected>-- בחר נושא --</option>
+						<option value="question">שאלה כללית</option>
+						<option value="collab">הצעת שיתוף פעולה</option>
+						<option value="feedback">משוב / חווית טיול</option>
+						<option value="report">דיווח על תקלה באתר</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label for="message">תוכן ההודעה:</label>
+					<textarea id="message" name="message_content" rows="6" required></textarea>
+				</div>
+				
+				<div class="form-group-checkbox">
+					<input type="checkbox" id="newsletter" name="newsletter_signup">
+					<label for="newsletter">אני מעוניין/ת להצטרף לרשימת התפוצה</label>
+				</div>
+				
+				<button type="submit" class="btn-submit">שליחה</button>
+			</form>
+			</article>
+		</div>
+	</main>
+
+	<footer class="footer" role="contentinfo">
+		<div class="container footer-inner">
+			<small>© 2025 Explore Jerusalem – כל הזכויות שמורות</small>
+			<nav class="nav" aria-label="ניווט תחתון">
+			<a href="about.html">אודות</a>
+			<a href="contact.html">צור קשר</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html> 

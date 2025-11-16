@@ -1,168 +1,190 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Explore Jerusalem – חוויות</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="icon" href="../media/logo.png">
-</head>
-<body>
-  <a class="skip-link" href="#main">דלג לתוכן</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explore Jerusalem – חוויות</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../media/logo.png">
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="בית">
+          <img src="../media/logo.png" alt="Explore Jerusalem">
+          <span>Explore Jerusalem</span>
+        </a>
 
-  <div id="header-placeholder"></div>
+        <input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
+        <label class="hamburger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-  <main id="main" class="section">
-    <div class="container">
-      <h1 class="m-0">חוויות בירושלים</h1>
-      <p class="muted">מסלולים, נקודות עניין והמלצות שאסור לפספס.</p>
-
-      <div class="grid mt-4">
-
-        <!-- 1 - Old City -->
-        <article class="card">
-          <img src="../media/experiences/old-city-jerusalem.jpg" alt="העיר העתיקה">
-          <div class="card-body">
-            <h3>העיר העתיקה</h3>
-            <p>סיור בין החומות, הכותל המערבי ושווקי העיר העתיקה.</p>
-
-            <details>
-              <summary>לפרטים נוספים →</summary>
-              <div class="info">
-                <p>סיור בין החומות, הכותל המערבי, כנסיית הקבר ושוק העיר העתיקה – חוויה היסטורית מרגשת לכל המשפחה.</p>
-                <ul>
-                  <li><strong>כתובת:</strong> שער יפו, ירושלים</li>
-                  <li><strong>שעות פתיחה:</strong> 08:00–19:00</li>
-                  <li><strong>מחיר:</strong> כניסה חופשית</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <!-- 2 - Mahane Yehuda -->
-        <article class="card">
-          <img src="../media/experiences/mahane-yehuda-market.jpeg" alt="שוק מחנה יהודה">
-          <div class="card-body">
-            <h3>שוק מחנה יהודה</h3>
-            <p>החוויה הקולינרית הכי ירושלמית שיש.</p>
-
-            <details>
-              <summary>לפרטים נוספים →</summary>
-              <div class="info">
-                <p>שוק מחנה יהודה – השוק התוסס והצבעוני של ירושלים. ביום שוק אוכל, בלילה ברים וחיי לילה תוססים.</p>
-                <ul>
-                  <li><strong>כתובת:</strong> רחוב מחנה יהודה</li>
-                  <li><strong>שעות:</strong> 07:00–23:00</li>
-                  <li><strong>מחיר:</strong> כניסה חופשית</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <!-- 3 - Mount Scopus -->
-        <article class="card">
-          <img src="../media/experiences/mount-scopus-view.jpg" alt="תצפית הר הצופים">
-          <div class="card-body">
-            <h3>תצפית הר הצופים</h3>
-            <p>נקודות תצפית עוצרות נשימה על העיר העתיקה.</p>
-
-            <details>
-              <summary>לפרטים נוספים →</summary>
-              <div class="info">
-                <p>תצפית פנורמית על העיר העתיקה והר הבית – מקום מושלם לשקיעה, עם אווירה ירושלמית אמיתית.</p>
-                <ul>
-                  <li><strong>כתובת:</strong> הר הצופים, ירושלים</li>
-                  <li><strong>שעות:</strong> פתוח כל היום</li>
-                  <li><strong>מחיר:</strong> חינם</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <!-- 4 - Gazelle Valley -->
-        <article class="card">
-          <img src="../media/experiences/gazelle-valley-park.webp" alt="עמק הצבאים">
-          <div class="card-body">
-            <h3>עמק הצבאים</h3>
-            <p>שמורת טבע בלב העיר.</p>
-
-            <details>
-              <summary>לפרטים נוספים →</summary>
-              <div class="info">
-                <p>שמורת טבע ירוקה בלב ירושלים עם מסלול הליכה, בריכות מים וצבאים חופשיים. מקום מושלם למשפחות ולפיקניק.</p>
-                <ul>
-                  <li><strong>כתובת:</strong> עמק הצבאים, ירושלים</li>
-                  <li><strong>שעות:</strong> 06:00–19:00</li>
-                  <li><strong>מחיר:</strong> חינם</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <!-- 5 - Israel Museum -->
-        <article class="card">
-          <img src="../media/experiences/israel-museum.jpg" alt="מוזיאון ישראל">
-          <div class="card-body">
-            <h3>מוזיאון ישראל</h3>
-            <p>אמנות, תרבות והיסטוריה במקום אחד.</p>
-
-            <details>
-              <summary>לפרטים נוספים →</summary>
-              <div class="info">
-                <p>מוזיאון האמנות והארכיאולוגיה הגדול בישראל. כולל את היכל הספר, גן הפסלים ותערוכות מתחלפות בינלאומיות.</p>
-                <ul>
-                  <li><strong>כתובת:</strong> רח׳ רופין 11, ירושלים</li>
-                  <li><strong>שעות:</strong> 10:00–17:00</li>
-                  <li><strong>מחיר:</strong> 54 ₪ למבוגר</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <!-- 6 - Nahlaot Street Art -->
-        <article class="card">
-          <img src="../media/experiences/nahlaot-street-art.jpeg" alt="סיור גרפיטי בנחלאות">
-          <div class="card-body">
-            <h3>סיור גרפיטי בנחלאות</h3>
-            <p>אמנות רחוב ירושלמית עם מדריך.</p>
-
-            <details>
-              <summary>לפרטים נוספים →</summary>
-              <div class="info">
-                <p>סיור אמנות רחוב מרתק בשכונת נחלאות, בהנחיית מדריך מקומי שיחשוף את הסיפורים מאחורי הציורים. מושלם לאוהבי תרבות ואמנות עכשווית.</p>
-                <ul>
-                  <li><strong>כתובת:</strong> שכונת נחלאות, ירושלים</li>
-                  <li><strong>שעות:</strong> 15:00–19:00</li>
-                  <li><strong>מחיר:</strong> 40 ₪ לאדם</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
+        <nav class="nav" aria-label="ניווט ראשי">
+          <a href="index.html">בית</a>
+          <a href="experiences.html">חוויות</a>
+          <a href="food.html">אוכל</a>
+          <a href="nightlife.html">חיי לילה</a>
+          <a href="events.html">אירועים</a>
+          <a href="museum.html">מוזיאונים</a>
+          <a href="park.html">פארקים</a>
+          <a href="about.html">אודות</a>
+          <a href="contact.html">צור קשר</a>
+        </nav>
       </div>
-    </div>
-  </main>
+    </header>
 
-  <div id="footer-placeholder"></div>
+    <main id="main" class="section">
+      <div class="container">
+        <h1 class="m-0">חוויות בירושלים</h1>
+        <p class="muted">מסלולים, נקודות עניין והמלצות שאסור לפספס.</p>
 
-  <script>
-    fetch("../components/header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+        <div class="grid mt-4">
 
-    fetch("../components/footer.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
-  </script>
-</body>
+          <!-- 1 - Old City -->
+          <article class="card">
+            <img src="../media/experiences/old-city-jerusalem.jpg" alt="העיר העתיקה">
+            <div class="card-body">
+              <h3>העיר העתיקה</h3>
+              <p>סיור בין החומות, הכותל המערבי ושווקי העיר העתיקה.</p>
+
+              <details>
+                <summary>לפרטים נוספים →</summary>
+                <div class="info">
+                  <p>סיור בין החומות, הכותל המערבי, כנסיית הקבר ושוק העיר העתיקה – חוויה היסטורית מרגשת לכל המשפחה.</p>
+                  <ul>
+                    <li><strong>כתובת:</strong> שער יפו, ירושלים</li>
+                    <li><strong>שעות פתיחה:</strong> 08:00–19:00</li>
+                    <li><strong>מחיר:</strong> כניסה חופשית</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 2 - Mahane Yehuda -->
+          <article class="card">
+            <img src="../media/experiences/mahane-yehuda-market.jpeg" alt="שוק מחנה יהודה">
+            <div class="card-body">
+              <h3>שוק מחנה יהודה</h3>
+              <p>החוויה הקולינרית הכי ירושלמית שיש.</p>
+
+              <details>
+                <summary>לפרטים נוספים →</summary>
+                <div class="info">
+                  <p>שוק מחנה יהודה – השוק התוסס והצבעוני של ירושלים. ביום שוק אוכל, בלילה ברים וחיי לילה תוססים.</p>
+                  <ul>
+                    <li><strong>כתובת:</strong> רחוב מחנה יהודה</li>
+                    <li><strong>שעות:</strong> 07:00–23:00</li>
+                    <li><strong>מחיר:</strong> כניסה חופשית</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 3 - Mount Scopus -->
+          <article class="card">
+            <img src="../media/experiences/mount-scopus-view.jpg" alt="תצפית הר הצופים">
+            <div class="card-body">
+              <h3>תצפית הר הצופים</h3>
+              <p>נקודות תצפית עוצרות נשימה על העיר העתיקה.</p>
+
+              <details>
+                <summary>לפרטים נוספים →</summary>
+                <div class="info">
+                  <p>תצפית פנורמית על העיר העתיקה והר הבית – מקום מושלם לשקיעה, עם אווירה ירושלמית אמיתית.</p>
+                  <ul>
+                    <li><strong>כתובת:</strong> הר הצופים, ירושלים</li>
+                    <li><strong>שעות:</strong> פתוח כל היום</li>
+                    <li><strong>מחיר:</strong> חינם</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 4 - Gazelle Valley -->
+          <article class="card">
+            <img src="../media/experiences/gazelle-valley-park.webp" alt="עמק הצבאים">
+            <div class="card-body">
+              <h3>עמק הצבאים</h3>
+              <p>שמורת טבע בלב העיר.</p>
+
+              <details>
+                <summary>לפרטים נוספים →</summary>
+                <div class="info">
+                  <p>שמורת טבע ירוקה בלב ירושלים עם מסלול הליכה, בריכות מים וצבאים חופשיים. מקום מושלם למשפחות ולפיקניק.</p>
+                  <ul>
+                    <li><strong>כתובת:</strong> עמק הצבאים, ירושלים</li>
+                    <li><strong>שעות:</strong> 06:00–19:00</li>
+                    <li><strong>מחיר:</strong> חינם</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 5 - Israel Museum -->
+          <article class="card">
+            <img src="../media/experiences/israel-museum.jpg" alt="מוזיאון ישראל">
+            <div class="card-body">
+              <h3>מוזיאון ישראל</h3>
+              <p>אמנות, תרבות והיסטוריה במקום אחד.</p>
+
+              <details>
+                <summary>לפרטים נוספים →</summary>
+                <div class="info">
+                  <p>מוזיאון האמנות והארכיאולוגיה הגדול בישראל. כולל את היכל הספר, גן הפסלים ותערוכות מתחלפות בינלאומיות.</p>
+                  <ul>
+                    <li><strong>כתובת:</strong> רח׳ רופין 11, ירושלים</li>
+                    <li><strong>שעות:</strong> 10:00–17:00</li>
+                    <li><strong>מחיר:</strong> 54 ₪ למבוגר</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- 6 - Nahlaot Street Art -->
+          <article class="card">
+            <img src="../media/experiences/nahlaot-street-art.jpeg" alt="סיור גרפיטי בנחלאות">
+            <div class="card-body">
+              <h3>סיור גרפיטי בנחלאות</h3>
+              <p>אמנות רחוב ירושלמית עם מדריך.</p>
+
+              <details>
+                <summary>לפרטים נוספים →</summary>
+                <div class="info">
+                  <p>סיור אמנות רחוב מרתק בשכונת נחלאות, בהנחיית מדריך מקומי שיחשוף את הסיפורים מאחורי הציורים. מושלם לאוהבי תרבות ואמנות עכשווית.</p>
+                  <ul>
+                    <li><strong>כתובת:</strong> שכונת נחלאות, ירושלים</li>
+                    <li><strong>שעות:</strong> 15:00–19:00</li>
+                    <li><strong>מחיר:</strong> 40 ₪ לאדם</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <small>© 2025 Explore Jerusalem – כל הזכויות שמורות</small>
+        <nav class="nav" aria-label="ניווט תחתון">
+          <a href="about.html">אודות</a>
+          <a href="contact.html">צור קשר</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

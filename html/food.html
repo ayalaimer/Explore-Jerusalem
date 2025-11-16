@@ -12,9 +12,33 @@
   <link rel="icon" href="../media/logo.png">
 </head>
 <body>
-  <a class="skip-link" href="#main">דלג לתוכן</a>
+  <header class="header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="בית">
+          <img src="../media/logo.png" alt="Explore Jerusalem">
+          <span>Explore Jerusalem</span>
+        </a>
 
-  <div id="header-placeholder"></div>
+        <input type="checkbox" id="nav-toggle" aria-label="פתיחת תפריט">
+        <label class="hamburger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="nav" aria-label="ניווט ראשי">
+          <a href="index.html">בית</a>
+          <a href="experiences.html">חוויות</a>
+          <a href="food.html">אוכל</a>
+          <a href="nightlife.html">חיי לילה</a>
+          <a href="events.html">אירועים</a>
+          <a href="museum.html">מוזיאונים</a>
+          <a href="park.html">פארקים</a>
+          <a href="about.html">אודות</a>
+          <a href="contact.html">צור קשר</a>
+        </nav>
+      </div>
+    </header>
 
   <main id="main" class="section">
     <div class="container">
@@ -147,16 +171,14 @@
     </div>
   </main>
 
-  <div id="footer-placeholder"></div>
-
-  <script>
-    fetch("../components/header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header-placeholder").innerHTML = data);
-
-    fetch("../components/footer.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
-  </script>
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <small>© 2025 Explore Jerusalem – כל הזכויות שמורות</small>
+      <nav class="nav" aria-label="ניווט תחתון">
+      <a href="about.html">אודות</a>
+      <a href="contact.html">צור קשר</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
