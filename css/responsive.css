@@ -62,7 +62,8 @@
 @media (min-width: 769px) and (max-width: 1023px) {
     .grid { grid-template-columns: repeat(2, 1fr); }
     /* כל כרטיס תופס חצי מה-grid (לא צריך span 1 כי זה 2 עמודות) */
-    .grid .card { grid-column: span 1; } 
+    .grid .card { grid-column: span 6; } 
+	.layout { grid-template-columns: 1.5fr 0.7fr; }
 }
 
 
@@ -72,4 +73,5 @@
     .grid { grid-template-columns: repeat(12, 1fr); }
     /* כל כרטיס תופס 4/12 = שליש מהרוחב */
     .grid .card { grid-column: span 4; }
+	.layout { grid-template-columns: 1.5fr 0.7fr; }
 }
