@@ -9,8 +9,8 @@
 	cursor: pointer; 
 	padding: 10px 12px; 
 	border-radius: 8px; 
-	border: 1px solid #b38f2f; 
-; }
+	border: 1px solid #b38f2f;
+}
 
 .hamburger span { 
 	display: block; 
@@ -33,33 +33,43 @@
 }
 
 @media (max-width: 980px) {
-	.nav { 
+		.nav { 
 		display: none;
 		width: 100%; 
-		flex-direction: 
-		column; gap: 6px; 
-		padding-top: 10px; }
+		flex-direction: column;
+		gap: 6px; 
+		padding-top: 10px;
+	}
 	.header-inner { flex-wrap: wrap; }
 	.hamburger { display: inline-block; }
 	#nav-toggle:checked ~ .nav { display: flex; }
 }
 
-/* Layout simplification */
+/* responsive.css */
+
+/* ... קוד הניווט (Hamburger) ... */
+
+/* Mobile (Default): 1 column (if the base style.css is not 1 column) */
+/* אם אתה רוצה לכפות עמודה אחת רק עד 768px, השתמש בזה: */
 @media (max-width: 768px) {
-	.grid { grid-template-columns: 1fr !important; }
-	.layout { grid-template-columns: 1fr !important; }
-	.card img { height: 200px; }
+    .grid { grid-template-columns: 1fr !important; }
+    .grid .card { grid-column: span 1 !important; }  /* זה כבר קיים */
 }
 
 
-/* Responsive Cards & Layout */
-@media (min-width: 768px) {
-	.grid .card { grid-column: span 6; }
-	.layout { grid-template-columns: 1.5fr 0.7fr; }
+/* Tablet: 2 columns */
+/* מתחיל מפיקסל אחד מעל סיום המובייל */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    /* כל כרטיס תופס חצי מה-grid (לא צריך span 1 כי זה 2 עמודות) */
+    .grid .card { grid-column: span 1; } 
 }
 
+
+/* Desktop: 3 columns (span 4 in a 12-col grid) */
 @media (min-width: 1024px) {
-	.grid .card { grid-column: span 4; }
+    /* כאן חוזרים לרשת 12 העמודות */
+    .grid { grid-template-columns: repeat(12, 1fr); }
+    /* כל כרטיס תופס 4/12 = שליש מהרוחב */
+    .grid .card { grid-column: span 4; }
 }
-
-
